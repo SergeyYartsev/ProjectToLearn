@@ -1,13 +1,67 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/piano.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Virtual piano</title>
 </head>
 <body>
-    <b>Hello world!!!</b>
-    <script src="js/script.js"></script>
+  <body>
+  <header>
+    <div class="title">
+      <h1 class="title_name">Virtual Piano</h1>
+    </div>
+  </header>
+  <section class="wrapper">
+    <div class="switch">
+      <div class="switch_all switch_notes">Notes</div>
+      <div class="switch_all switch_latters">Letters</div>
+    </div>
+    <div class="white" id="white">
+      <div class="white_key" data-type="z" data-note="c"></div>
+      <div class="white_key" data-type="x" data-note="d"></div>
+      <div class="white_key" data-type="c" data-note="e"></div>
+      <div class="white_key" data-type="v" data-note="f"></div>
+      <div class="white_key" data-type="b" data-note="g"></div>
+      <div class="white_key" data-type="n" data-note="a"></div>
+      <div class="white_key" data-type="m" data-note="b"></div>
+    </div>
+    <div class="black_wrapper">
+      <div class="black" id="black">
+        <div class="black_key ml" data-type="s" data-note="c#"></div>
+        <div class="black_key ml" data-type="d" data-note="d#"></div>
+        <div class="black_space ml"></div>
+        <div class="black_key ml" data-type="g" data-note="f#"></div>
+        <div class="black_key ml" data-type="h" data-note="g#"></div>
+        <div class="black_key ml" data-type="j" data-note="a#"></div>
+      </div>
+    </div>
+    <div class="audio">
+      <audio id="c" src="audio/c.mp3"></audio>
+      <audio id="d" src="audio/d.mp3"></audio>
+      <audio id="e" src="audio/e.mp3"></audio>
+      <audio id="f" src="audio/f.mp3"></audio>
+      <audio id="g" src="audio/g.mp3"></audio>
+      <audio id="a" src="audio/a.mp3"></audio>
+      <audio id="b" src="audio/b.mp3"></audio>
+      <audio id="c#" src="audio/c♯.mp3"></audio>
+      <audio id="d#" src="audio/d♯.mp3"></audio>
+      <audio id="f#" src="audio/f♯.mp3"></audio>
+      <audio id="g#" src="audio/g♯.mp3"></audio>
+      <audio id="a#" src="audio/a♯.mp3"></audio>
+      
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+  <script src="js/script.js"></script>
+  
 </body>
 </html>
+

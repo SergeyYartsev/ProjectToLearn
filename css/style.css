@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Dancing Script', cursive;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #b1b0b0;
+}
+
+.title {
+  min-height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.title_name {
+  display: block;
+  font-size: 70px;
+  letter-spacing: 150%;
+}
+
+.wrapper {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+.switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 40px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.switch_all {
+  min-width: 150px;
+  margin: 0 30px;
+  padding: 20px;
+  border: 1px solid #312222;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.switch_all:hover {
+  background-color: #312222;
+  color: #faeacc;
+}
+
+.white {
+  padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  pointer-events: none;
+}
+
+.white_key {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75px;
+  height: 300px;
+  background-color: #faeacc;
+  border-radius: 0 0 10px 10px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.white_key:hover {
+  background-color: #f8e4bf;
+}
+
+.white_key::after {
+  content: attr(data-type);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  line-height: 60px;
+  color: #312222;
+  top: 290px;
+  left: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.white_keyChange {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 75px;
+  height: 300px;
+  background-color: #faeacc;
+  border-radius: 0 0 10px 10px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.white_keyChange:hover {
+  background-color: #f8e4bf;
+}
+
+.white_keyChange::after {
+  content: attr(data-note);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  line-height: 60px;
+  color: #312222;
+  top: 290px;
+  left: 25px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.black_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.black {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  bottom: 300px;
+  width: 476px;
+  pointer-events: none;
+}
+
+.black .ml {
+  margin: 0 14px;
+}
+
+.black_key {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60px;
+  height: 210px;
+  background-color: #312222;
+  border-radius: 0 0 10px 10px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.black_key:hover {
+  background-color: #3d2e2e;
+}
+
+.black_key::before {
+  content: attr(data-type);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  line-height: 60px;
+  color: #312222;
+  bottom: 57px;
+  left: 17px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.black_keyChange {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 60px;
+  height: 210px;
+  background-color: #312222;
+  border-radius: 0 0 10px 10px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.black_keyChange:hover {
+  background-color: #3d2e2e;
+}
+
+.black_keyChange::before {
+  content: attr(data-note);
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 35px;
+  line-height: 60px;
+  color: #312222;
+  bottom: 57px;
+  left: 17px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  pointer-events: none;
+}
+
+.black_space {
+  width: 60px;
+  height: 210px;
+  pointer-events: none;
+  background-color: transparent;
+}
+
+.active {
+  -webkit-transform: scale(0.96) translate(0px, -5px);
+          transform: scale(0.96) translate(0px, -5px);
+}
+/*# sourceMappingURL=style.css.map */

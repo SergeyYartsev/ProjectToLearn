@@ -1,0 +1,177 @@
+$main-color: rgb(49, 34, 34);
+$color-1: rgb(250, 234, 204);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Dancing Script', cursive;
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: rgb(177, 176, 176);
+}
+
+
+
+.title {
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    // .title_name
+
+    &_name {
+        display: block;
+        font-size: 70px;
+        letter-spacing: 150%;
+    }
+}
+.wrapper {
+    max-width: 550px;
+    margin: 0 auto;
+}
+.switch {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+
+    // .switch_notes\
+    &_all{
+        min-width: 150px;
+        margin: 0 30px;
+        padding: 20px;
+        border: 1px solid $main-color;
+        border-radius: 50px;
+        cursor: pointer;
+        transition-duration: 0.3s;
+        &:hover{
+            background-color: $main-color;
+            color: $color-1;
+        }
+
+    }
+    &_notes{
+        
+
+    }
+    &_latters{
+
+    }
+
+}
+.white {
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;
+
+    // .white_key
+
+    &_key {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 75px;
+        height: 300px;
+        background-color:$color-1;
+        border-radius: 0 0 10px 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(248, 228, 191);
+        }
+        &::after{
+            content: attr(data-type);
+            position: relative;
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            line-height: 60px;
+            color: $main-color;
+            top: 290px;
+            left: 25px;
+            transition: 0.3s;
+            pointer-events: none;
+            
+        }
+    }
+    &_keyChange{
+        font-size: 50px;
+        ::after{
+            content: attr(data-note);
+        }
+    }
+}
+
+.black {
+    padding: 0 37px;
+    display: flex;
+    position: relative;
+    bottom: 300px;
+
+    .ml{
+        margin: 0 14px;
+        
+    }
+
+    &_key {
+        font-family: Arial, Helvetica, sans-serif;
+        width: 60px;
+        height: 210px;
+        background-color:$main-color;
+        border-radius: 0 0 10px 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(61, 46, 46);
+        }
+        &::before{
+            content: attr(data-type);
+            position: relative;
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            line-height: 60px;
+            color: $main-color;
+            bottom: 57px;
+            left: 17px;
+            transition: 0.3s;
+            pointer-events: none;
+            
+        }
+    }
+    &_keyChange { 
+        font-family: Arial, Helvetica, sans-serif;
+        width: 60px;
+        height: 210px;
+        background-color:$main-color;
+        border-radius: 0 0 10px 10px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgb(61, 46, 46);
+        }
+        &::before{
+            content: attr(data-type);
+            position: relative;
+            width: 40px;
+            height: 40px;
+            font-size: 40px;
+            line-height: 60px;
+            color: $main-color;
+            bottom: 57px;
+            left: 17px;
+            transition: 0.3s;
+            pointer-events: none;
+            
+        }
+    }
+
+    // .black_space
+
+    &_space {
+        // margin-left: 10px;
+        width: 60px;
+        height: 210px;
+    }
+}
